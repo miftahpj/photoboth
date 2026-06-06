@@ -1,0 +1,33 @@
+{
+  "name": "lemillion-potoboth",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/supabase": "^1.3.5",
+    "@vueuse/nuxt": "^10.11.0",
+    "nuxt": "^3.13.2",
+    "vue": "^3.5.11",
+    "vue-router": "^4.4.5",
+    "pinia": "^2.2.2",
+    "@pinia/nuxt": "^0.5.5",
+    "vue-draggable-next": "^2.2.1",
+    "qrcode": "^1.5.4",
+    "html2canvas": "^1.4.1",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  }
+}

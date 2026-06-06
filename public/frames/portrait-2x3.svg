@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900">
+  <!-- Airmail border stripes -->
+  <rect width="600" height="900" fill="none"/>
+  <!-- Top stripe -->
+  <rect x="0" y="0" width="600" height="30" fill="none"/>
+  <pattern id="stripe-top" x="0" y="0" width="60" height="30" patternUnits="userSpaceOnUse">
+    <rect x="0" y="0" width="20" height="30" fill="#C0392B"/>
+    <rect x="20" y="0" width="20" height="30" fill="#FFFFFF"/>
+    <rect x="40" y="0" width="20" height="30" fill="#1A3A6B"/>
+  </pattern>
+  <rect x="0" y="0" width="600" height="30" fill="url(#stripe-top)"/>
+  <!-- Bottom stripe -->
+  <rect x="0" y="870" width="600" height="30" fill="url(#stripe-top)"/>
+  <!-- Left stripe -->
+  <pattern id="stripe-left" x="0" y="0" width="30" height="60" patternUnits="userSpaceOnUse">
+    <rect x="0" y="0" width="30" height="20" fill="#C0392B"/>
+    <rect x="0" y="20" width="30" height="20" fill="#FFFFFF"/>
+    <rect x="0" y="40" width="30" height="20" fill="#1A3A6B"/>
+  </pattern>
+  <rect x="0" y="30" width="30" height="840" fill="url(#stripe-left)"/>
+  <!-- Right stripe -->
+  <rect x="570" y="30" width="30" height="840" fill="url(#stripe-left)"/>
+  <!-- Photo slots 2x3 (transparent) -->
+  <!-- Row 1 -->
+  <rect x="45" y="45" width="240" height="260" fill="none" stroke="#D4B896" stroke-width="2" stroke-dasharray="8,4"/>
+  <rect x="315" y="45" width="240" height="260" fill="none" stroke="#D4B896" stroke-width="2" stroke-dasharray="8,4"/>
+  <!-- Row 2 -->
+  <rect x="45" y="320" width="240" height="260" fill="none" stroke="#D4B896" stroke-width="2" stroke-dasharray="8,4"/>
+  <rect x="315" y="320" width="240" height="260" fill="none" stroke="#D4B896" stroke-width="2" stroke-dasharray="8,4"/>
+  <!-- Row 3 -->
+  <rect x="45" y="595" width="240" height="260" fill="none" stroke="#D4B896" stroke-width="2" stroke-dasharray="8,4"/>
+  <rect x="315" y="595" width="240" height="260" fill="none" stroke="#D4B896" stroke-width="2" stroke-dasharray="8,4"/>
+  <!-- Label -->
+  <text x="300" y="858" text-anchor="middle" font-family="serif" font-size="12" fill="#8B4513" letter-spacing="4">RAFIKOSAN · lemillion project · PAR AVION</text>
+</svg>
