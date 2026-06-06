@@ -25,7 +25,9 @@
         <div class="text-center mb-4">
           <div class="inline-block border-4 border-airmail-blue p-1 shadow-stamp mb-3">
             <div class="w-44 h-44 bg-white flex items-center justify-center mx-auto">
-              <p class="font-courier text-xs text-airmail-stamp text-center px-2">[Ganti dengan<br>gambar QRIS Anda]</p>
+              <p class="font-courier text-xs text-airmail-stamp text-center px-2">
+                <img src="/assets/dana.jpg" alt="" srcset="">
+              </p>
             </div>
           </div>
           <p class="font-display text-3xl text-airmail-red">
