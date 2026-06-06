@@ -1,0 +1,2 @@
+# Route all requests to Nuxt SSR Netlify function
+/*    /.netlify/functions/server    200
