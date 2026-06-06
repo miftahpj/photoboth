@@ -35,9 +35,9 @@
           </p>
           <p class="font-courier text-xs text-airmail-stamp mt-1">Durasi sesi 10 menit · 6 foto</p>
         </div>
-        <button @click="handleQrisPay" :disabled="loading" class="btn-primary w-full mt-2 text-sm">
+        <!-- <button @click="handleQrisPay" :disabled="loading" class="btn-primary w-full mt-2 text-sm">
           {{ loading ? 'Memproses...' : 'PEMBAYARAN SELESAI →' }}
-        </button>
+        </button> -->
       </div>
 
       <div v-else class="border-2 border-t-0 border-airmail-ink p-6 bg-airmail-cream">
