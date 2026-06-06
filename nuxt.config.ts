@@ -12,36 +12,36 @@ export default defineNuxtConfig({
   supabase: {
     redirect: false,
     redirectOptions: {
-      login:    '/admin/login',
+      login: '/admin/login',
       callback: '/confirm',
-      exclude:  ['/*'],
+      exclude: ['/*'],
     },
     cookieOptions: {
-      maxAge:   60 * 60 * 8,
+      maxAge: 60 * 60 * 8,
       sameSite: 'lax',
     },
     clientOptions: {
       auth: {
-        flowType:           'pkce',
+        flowType: 'pkce',
         detectSessionInUrl: true,
-        persistSession:     true,
-        autoRefreshToken:   true,
+        persistSession: true,
+        autoRefreshToken: true,
       },
     },
   },
 
   tailwindcss: {
-    cssPath:    '~/assets/css/tailwind.css',
+    cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
   },
 
   runtimeConfig: {
     supabaseServiceKey: process.env.SUPABASE_SERVICE_KEY,
-    adminSecret:        process.env.ADMIN_SECRET || 'lemillion-admin-2024',
+    adminSecret: process.env.ADMIN_SECRET || 'lemillion-admin-2024',
     public: {
       supabaseUrl: process.env.SUPABASE_URL,
       supabaseKey: process.env.SUPABASE_KEY,
-      appName:     'RAFIKOSAN lemillion project',
+      appName: 'RAFIKOSAN lemillion project',
     },
   },
 
@@ -57,7 +57,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
-          rel:  'stylesheet',
+          rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Special+Elite&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap',
         },
       ],
@@ -70,14 +70,8 @@ export default defineNuxtConfig({
     dirs: ['stores', 'composables'],
   },
 
-  // Use netlify preset — Nitro handles the output structure automatically
+  ssr: true,
   nitro: {
-    preset: 'netlify',
-    // Ensure output is flushed before Netlify reads it
-    output: {
-      dir: '.output',
-      serverDir: '.output/server',
-      publicDir: '.output/public',
-    },
+    preset: 'netlify-static',
   },
 })
