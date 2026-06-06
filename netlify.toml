@@ -9,3 +9,10 @@
 [functions]
   directory    = ".netlify/functions-internal"
   node_bundler = "esbuild"
+
+# Fallback redirect jika _redirects tidak terbaca
+[[redirects]]
+  from   = "/*"
+  to     = "/.netlify/functions/server"
+  status = 200
+  force  = false
