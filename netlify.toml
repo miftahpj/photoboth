@@ -1,11 +1,11 @@
 [build]
   command = "npm install --legacy-peer-deps && npm run generate"
-  publish = "dist"
+  publish = ".output/public"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
 
 [[redirects]]
   from   = "/*"
-  to     = "/index.html"
+  to     = "/200.html"
   status = 200
