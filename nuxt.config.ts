@@ -70,7 +70,14 @@ export default defineNuxtConfig({
     dirs: ['stores', 'composables'],
   },
 
+  // Use netlify preset — Nitro handles the output structure automatically
   nitro: {
     preset: 'netlify',
+    // Ensure output is flushed before Netlify reads it
+    output: {
+      dir: '.output',
+      serverDir: '.output/server',
+      publicDir: '.output/public',
+    },
   },
 })
