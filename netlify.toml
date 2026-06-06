@@ -1,18 +1,12 @@
 [build]
   command = "npm run generate"
-  publish = ".output/public"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
   NPM_FLAGS    = "--legacy-peer-deps"
 
-[functions]
-  directory    = ".netlify/functions-internal"
-  node_bundler = "esbuild"
-
-# Fallback redirect jika _redirects tidak terbaca
 [[redirects]]
   from   = "/*"
-  to     = "/.netlify/functions/server"
+  to     = "/index.html"
   status = 200
-  force  = true
